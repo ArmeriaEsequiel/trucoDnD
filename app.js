@@ -513,20 +513,21 @@ function render() {
     )
     .join('');
 
+ // Cartas jugadas en el paño
   document.getElementById('played-cards').innerHTML = state.currentPlays
     .map(
       (play) => `
-        <div>
-          <div class="card">
-            <div>${play.card.num}</div>
-            <div class="card-suit">${play.card.icon}</div>
-            <div style="text-align:right">${play.card.num}</div>
-          </div>
-          <div class="card-owner">${state.players[play.playerIdx].name}</div>
-        </div>`
+      <div>
+        <div class="card">
+          <div>${play.card.num}</div>
+          <div class="card-suit">${play.card.icon}</div>
+          <div style="text-align:right">${play.card.num}</div>
+        </div>
+        <div class="card-owner">${state.players[play.playerIdx].name}</div>
+      </div>`
     )
     .join('');
-
+  
   const fullHand = [...me.hand, ...me.played];
   document.getElementById('my-envido').textContent = `Envido: ${calculateEnvido(fullHand)}`;
   document.getElementById('my-hand').innerHTML = me.hand
