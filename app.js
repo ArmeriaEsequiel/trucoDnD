@@ -452,7 +452,7 @@ function evaluateTrick() {
   if (handWinner !== null) {
     addLog(`🎉 Equipo ${handWinner === 0 ? 'A' : 'B'} gana la ronda (+${state.trucoLevel} pts)`);
     state.scores[handWinner] += state.trucoLevel;
-    setTimeout(() => startNewHand(), 1200);
+    setTimeout(() => startNewHand(), 2500);
   }
   broadcastState();
 }
