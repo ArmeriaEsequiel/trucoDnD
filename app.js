@@ -1,9 +1,25 @@
 // --- BARAJA ESPAÑOLA Y JERARQUÍA DE TRUCO ---
 const SUITS = [
-  { id: 'espada', label: 'Espada', icon: '⚔️' },
-  { id: 'basto', label: 'Basto', icon: '🪵' },
-  { id: 'oro', label: 'Oro', icon: '🪙' },
-  { id: 'copa', label: 'Copa', icon: '🏆' }
+  {
+    id: 'espada',
+    label: 'Espada',
+    icon: `<svg viewBox="0 0 64 64" width="34" height="34"><path fill="#4a6b82" d="M54 6L24 36l4 4L58 10z"/><path fill="#b89b5e" d="M16 32l16 16-4 4-16-16z"/><path fill="#5c3a21" d="M10 46l8 8-6 6-8-8z"/></svg>`
+  },
+  {
+    id: 'basto',
+    label: 'Basto',
+    icon: `<svg viewBox="0 0 64 64" width="34" height="34"><path fill="#6e472b" d="M46 8c4 0 8 4 8 8 0 6-26 36-34 40-4 2-10-4-8-8 4-8 34-40 34-40z"/><circle cx="38" cy="22" r="2.5" fill="#3d2514"/><circle cx="28" cy="34" r="2.5" fill="#3d2514"/></svg>`
+  },
+  {
+    id: 'oro',
+    label: 'Oro',
+    icon: `<svg viewBox="0 0 64 64" width="34" height="34"><circle cx="32" cy="32" r="22" fill="#e6b800" stroke="#997300" stroke-width="4"/><circle cx="32" cy="32" r="14" fill="none" stroke="#fff099" stroke-width="2"/></svg>`
+  },
+  {
+    id: 'copa',
+    label: 'Copa',
+    icon: `<svg viewBox="0 0 64 64" width="34" height="34"><path fill="#c0392b" d="M16 10h32v14c0 10-7 16-16 16s-16-6-16-16V10z"/><rect x="29" y="38" width="6" height="14" fill="#d4af37"/><rect x="20" y="50" width="24" height="6" rx="2" fill="#d4af37"/></svg>`
+  }
 ];
 const NUMBERS = [1, 2, 3, 4, 5, 6, 7, 10, 11, 12];
 
